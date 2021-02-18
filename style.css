@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Oxanium|PT+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Oxanium|PT+Mono&display=swap');
 
 * {
 	box-sizing: border-box;
 }
 
 :root {
-	--primary-color: dodgerblue;
-	--select-color: dodgerblue;
+	--primary-colour: dodgerblue;
+	--select-colour: dodgerblue;
 	--success: rgb(15, 158, 2);
-	--danger: rgb(214, 23, 23);
+	--failure: rgb(214, 23, 23);
 }
 
 body {
@@ -18,8 +18,8 @@ body {
 	display: flex;
 	justify-content: center;
 	height: 100vh;
-	background: #e8e8e8;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23161616' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+	background: #E8E8E8;
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"%3E%3Cg fill="%23161616" fill-opacity="0.1"%3E%3Cpath fill-rule="evenodd" d="M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z"/%3E%3C/g%3E%3C/svg%3E');
 }
 
 .game-container {
@@ -34,7 +34,7 @@ body {
 }
 
 .header {
-	background: var(--primary-color);
+	background: var(--primary-colour);
 	color: white;
 	font-family: Oxanium, sans-serif;
 	font-size: 24px;
@@ -51,8 +51,9 @@ body {
 	height: 600px;
 }
 
-/* Splash Page -------------------- */
-input[type="radio"] {
+/* splash-page -------------------- */
+
+input[type='radio'] {
 	opacity: 0;
 	width: 100%;
 	height: 75px;
@@ -84,7 +85,7 @@ label {
 }
 
 .selected-label {
-	background: var(--select-color);
+	background: var(--select-colour);
 	color: white;
 }
 
@@ -112,7 +113,8 @@ label {
 	top: 134px;
 }
 
-/* Game Page -------------------------- */
+/* game-page -------------------------- */
+
 .height-240 {
 	height: 240px;
 	width: 100%;
@@ -148,7 +150,7 @@ label {
 }
 
 .selected-item {
-	background: var(--select-color);
+	background: var(--select-colour);
 	position: fixed;
 	top: 443px;
 	z-index: -1;
@@ -156,8 +158,7 @@ label {
 	height: 80px;
 }
 
-.item-footer,
-.selection-footer {
+.item-footer, .selection-footer {
 	width: 100%;
 	height: 90px;
 	background: rgba(0, 0, 0, 1);
@@ -190,13 +191,12 @@ button:active {
 	transform: scale(0.99);
 }
 
-.wrong,
-.right {
+.wrong, .right {
 	width: 40%;
 }
 
 .wrong {
-	background: var(--danger);
+	background: var(--failure);
 	margin-right: 25px;
 }
 
@@ -204,13 +204,12 @@ button:active {
 	background: var(--success);
 }
 
-.start,
-.play-again {
+.start, .play-again {
 	width: 90%;
-	background: var(--primary-color);
+	background: var(--primary-colour);
 }
 
-/* Countdown Page ---------------------- */
+/* countDown-page ---------------------- */
 .countdown {
 	margin-top: 45%;
 	font-size: 100px;
@@ -219,7 +218,7 @@ button:active {
 	cursor: pointer;
 }
 
-/* Score Page ------------------------- */
+/* score-page ------------------------- */
 .score-container {
 	height: 600px;
 	display: flex;
@@ -253,10 +252,10 @@ button:active {
 }
 
 .penalty-time {
-	color: var(--danger);
+	color: var(--failure);
 }
 
-/* Media Query: Laptop */
+/* media-query: lapTop */
 @media screen and (max-width: 1800px) {
 	.game-container {
 		margin-top: 35px;
@@ -267,7 +266,7 @@ button:active {
 	}
 }
 
-/* Media Query: Large Smartphone (Vertical) */
+/* media-query: large smartPhone (vertical) */
 @media screen and (max-width: 500px) {
 	.game-container {
 		width: 100%;
@@ -310,7 +309,7 @@ button:active {
 	}
 }
 
-/* Media Query: iPhone */
+/* media-query: iPhone */
 @media screen and (max-width: 376px) {
 	.best-score {
 		left: 232px;

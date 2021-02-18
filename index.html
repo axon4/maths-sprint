@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 	<head>
-		<meta charset='UTF-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<title>Maths Sprint</title>
-		<link rel='icon' type='image/png' href='favicon.png'>
-		<link rel='stylesheet' href='style.css'>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title>Maths-Sprint</title>
+		<link rel='icon' type='image/x-icon' href='favicon.ico' />
+		<link rel='stylesheet' type='text/css' href='style.css' />
 	</head>
 	<body>
 		<div class='game-container'>
 			<div class='header'>
-				<h1>Maths Sprint</h1>
+				<h1>Maths-Sprint</h1>
 			</div>
-
 			<div id='splash-page' class='card'>
 				<form>
 					<div class='selection-container'>
 						<div class='radio-container'>
 							<label for='value-10'>10 Questions</label>
-							<input id='value-10' name='questions' type='radio' value='10'>
+							<input id='value-10' name='questions' type='radio' value='10' />
 							<span class='best-score'>
 								<span>Best Score</span>
 								<span class='best-score-value'></span>
@@ -26,7 +25,7 @@
 						</div>
 						<div class='radio-container'>
 							<label for='value-25'>25 Questions</label>
-							<input id='value-25' name='questions' type='radio' value='25'>
+							<input id='value-25' name='questions' type='radio' value='25' />
 							<span class='best-score'>
 								<span>Best Score</span>
 								<span class='best-score-value'></span>
@@ -34,7 +33,7 @@
 						</div>
 						<div class='radio-container'>
 							<label for='value-50'>50 Questions</label>
-							<input id='value-50' name='questions' type='radio' value='50'>
+							<input id='value-50' name='questions' type='radio' value='50' />
 							<span class='best-score'>
 								<span>Best Score</span>
 								<span class='best-score-value'></span>
@@ -42,7 +41,7 @@
 						</div>
 						<div class='radio-container'>
 							<label for='value-99'>99 Questions</label>
-							<input id='value-99' name='questions' type='radio' value='99'>
+							<input id='value-99' name='questions' type='radio' value='99' />
 							<span class='best-score'>
 								<span>Best Score</span>
 								<span class='best-score-value'></span>
@@ -54,28 +53,25 @@
 					</div>
 				</form>
 			</div>
-
 			<div id='countdown-page' class='card' hidden>
 				<h1 class='countdown'></h1>
 			</div>
-
 			<div id='game-page' class='card' hidden>
 				<div class='item-container'></div>
 				<div class='item-footer'>
-					<button class='wrong' onclick="select(false)">✗</button>
-					<button class='right' onclick="select(true)">✓</button>
+					<button class='wrong' onclick='select(false)'>✗</button>
+					<button class='right' onclick='select(true)'>✓</button>
 				</div>
 			</div>
-
 			<div id='score-page' class='card' hidden>
 				<div class='score-container'>
-					<h1 class='title'>Your Time</h1>
+					<h1 class='title'>Your Time:</h1>
 					<h1 class='final-time'></h1>
 					<h1 class='base-time'></h1>
 					<h1 class='penalty-time'></h1>
 				</div>
 				<div class='score-footer'>
-					<button class='play-again' onclick='playAgain();' hidden>Play Again</button>
+					<button class='play-again' onclick='playAGain()' hidden>Play AGain</button>
 				</div>
 			</div>
 		</div>

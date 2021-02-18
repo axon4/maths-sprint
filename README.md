@@ -1,7 +1,7 @@
-# Maths Sprint
+# Maths-Sprint
 
-* Test your mental mathematics with this game of quickfire multiplication questions.
-* Best scores saved locally.
+* test your mental-mathematics with this game of quickFire--multiplication-questions
+* best scores saved locally (local-storage)
 
 ## Stack
 
